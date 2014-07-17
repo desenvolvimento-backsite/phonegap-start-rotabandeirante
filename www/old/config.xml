@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.backsite.backsite"
+    version   = "1.0.0">
+
+<name>Rota dos Bandeirantes</name>
+
+<description>
+© Backsite TESTES
+</description>
+
+<author href="https://www.backsite.com.br" email="backsite@backsite.com.br">
+Bakcsite
+</author>
+<icon src="icon.png" />
+<gap:splash src="splash.jpg" />
+<!--- Permisos de Internet-->
+<access origin="http://projeto01.backsite.com.br" />
+<access origin="http://phonegap.com" subdomains="true" />
+<access origin="*"/>
+<!--- Plugins-->
+<gap:plugin name="com.phonegap.plugins.barcodescanner" />
+<gap:plugin name="nl.x-services.plugins.calendar" />
+<gap:plugin name="com.phonegap.plugins.pushplugin" />
+<!--- Permisos de API Phonegap-->
+<preference name="permissions" value="none"/>
+<feature name="Notification">
+    <param name="android-package" value="org.apache.cordova.Notification" />
+</feature>
+<feature name="Camera">
+    <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+</feature>
+<feature name="Contacts">
+    <param name="android-package" value="org.apache.cordova.contacts.ContactManager" />
+</feature>
+<feature name="Storage">
+    <param name="android-package" value="org.apache.cordova.Storage" />
+</feature>
+<feature name="File">
+    <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+</feature>
+<feature name="FileTransfer">
+    <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
+</feature>
+<feature name="Geolocation">
+    <param name="android-package" value="org.apache.cordova.geolocation.GeoBroker" />
+</feature>
+<feature name="BarcodeScanner">
+        <param name="android-package" value="com.phonegap.plugins.barcodescanner.BarcodeScanner" />
+    </feature>
+<feature name="http://api.phonegap.com/1.0/geolocation"/>
+
+</widget>
