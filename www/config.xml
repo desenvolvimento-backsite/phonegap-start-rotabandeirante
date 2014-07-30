@@ -20,6 +20,7 @@ Bakcsite
 <icon src="res/icon/ios/icone_rota_120.png"         	gap:platform="ios"        width="120" height="120" />
 <icon src="res/icon/ios/icone_rota_152.png"         	gap:platform="ios"        width="152" height="152" />
 <gap:splash src="splash.jpg" />
+<gap:splash src="Default-568h@2x.png" gap:platform="ios" width="640" height="1136" />
 <!--- Permisos de Internet-->
 <!-- access origin="*" / -->
 <!--- Plugins-->
